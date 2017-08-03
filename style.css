@@ -10,21 +10,21 @@ body{
 }
 
 .form{
-    margin: 5rem 0 0 0;
+    margin: 5rem 0 5rem 0;
 }
 .title{
-    padding: 1rem 0 5rem 0;
-    margin: 1rem 1rem 1rem 1rem; 
+    padding: 1rem 0 1rem 0;
+    margin: 4rem 1rem 1rem 1rem; 
     background-color: white;
 }
 .card{
-    margin: 5rem 2rem 5rem 2rem;
-    background-image: url("songBack.jpg");
+     margin: 0rem 2rem 5rem 2rem;   
+    background-image: url("songTwo.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 4px;
-    padding: 5rem 0 2rem 0;
+     padding: 5rem 1rem 2rem 1rem;  
 }
 
 .image{
@@ -34,17 +34,17 @@ body{
     height: 30rem;  */
     transition: .5s ease;
     backface-visibility: hidden;
-    min-height: 30rem;
-    min-width: 30rem;
+    min-height: 15rem;
+    min-width: 15rem;
     margin: 0 auto;
 } 
 
 .replacement{
   transition: .5s ease;
   opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
@@ -53,7 +53,8 @@ body{
   background-color: white;
   color: black;
   /* font-size: 16px; */
-   padding: 1rem 2rem;
+    padding: 1rem 1rem 1rem 1rem; 
+    margin-bottom: 7rem;
 }
 
 .card:hover .image{

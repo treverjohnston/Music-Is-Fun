@@ -15,24 +15,33 @@ function drawSongs(artist){
   for (var i = 0; i < artist.length; i++) {
     var song = artist[i];
     template += `
-           <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class = "card">
-                <img src="${song.albumArt}" class = "image img-responsive" alt="album art">
-                  <div class = "title text-center">
-                    <h4>${song.title}<h4>
-                  </div>
-                <div class="replacement">
-                    <div class="change">
-                          <h4>${song.artist}</h4>
-                          <p>${song.collection}</p>
-                          <p>Album Cost:${song.price}</p>
-                          <audio controls> 
-                            <source = src="${song.preview}" type ="audio/mp3">
-                          </audio>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="card">
+                        <div class="row">
+                            <div class=" col-xs-6">
+                                <img src="${song.albumArt} " class="image img-responsive " alt="album art ">
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="title text-center ">
+                                    <h4>${song.title}
+                                        <h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="replacement ">
+                                    <div class="change ">
+                                        <h3>${song.artist}</h3>
+                                        <h4>${song.collection}</h4>
+                                        <h5>Album Cost:${song.price}</h5>
+                                        <audio controls>
+                                            <source=s rc="${song.preview} " type="audio/mp3 ">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-              </div>
-            </div> 
+                </div> 
                 `
     
   }
