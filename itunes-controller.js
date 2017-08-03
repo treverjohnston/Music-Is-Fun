@@ -34,7 +34,7 @@ function drawSongs(artist){
                                         <h4>${song.collection}</h4>
                                         <h5>Album Cost:${song.price}</h5>
                                         <audio controls>
-                                            <source=s rc="${song.preview} " type="audio/mp3 ">
+                                            <source src="${song.preview} " type="audio/mp3 ">
                                         </audio>
                                     </div>
                                 </div>
