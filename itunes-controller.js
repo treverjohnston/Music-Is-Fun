@@ -14,12 +14,13 @@ function drawSongs(artist){
 
   for (var i = 0; i < artist.length; i++) {
     var song = artist[i];
+    if(song.kind == 'song'){
     template += `
-                  <div class="col-xs-12 col-md-3">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="row">
                             <div class=" col-xs-6">
-                                <img src="${song.albumArt} " class="image img-responsive " alt="album art ">
+                                <img src="${song.albumArt}" class="image img-responsive " alt="album art ">
                             </div>
                             <div class="col-xs-6">
                                 <div class="title text-center ">
@@ -43,22 +44,19 @@ function drawSongs(artist){
                     </div>
                 </div> 
                 `
-    
+    }
   }
   songElem.innerHTML = template
 
 }
 
-    // <div class="card well col-xs-4">
-    //               <img src="${song.albumArt}" class= "img-responsive img" alt="album art">
-    //                 <div class="text">
-    //                     <h2>${song.title}</h2>
-    //                     <h3>${song.artist}</h3>
-    //                     <h4>${song.collection}</h4>
-    //                     <h4>Album Cost:${song.price}</h4>
-    //                     <a href="{song.preview}"><h4>Preview</h4></a>
-    //                 </div>
-    //              </div>
+document.addEventListener("play", function(evt){
+    if(window.$_currentlyPlaying && window.$_currentlyPlaying != evt.target)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
 
 
   
