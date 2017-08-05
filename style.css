@@ -2,7 +2,7 @@
     margin: 5rem 5rem 10rem 5rem;
 } */
 body{
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ body{
 }
 .card{
      margin: 0rem 2rem 5rem 2rem;   
-    background-image: url("songTwo.jpg");
+    background-image: url("images/songTwo.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
